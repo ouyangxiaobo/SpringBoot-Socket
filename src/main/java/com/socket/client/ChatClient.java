@@ -34,7 +34,7 @@ public class ChatClient {
 
         log.info("host: {}",host);
         outputStream.write(host.getBytes());
-        String content = "客户端";
+        String content = "";
         while (true){
             byte[] buff = new byte[1024];
             inputStream.read(buff);
